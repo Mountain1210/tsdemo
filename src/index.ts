@@ -4,21 +4,35 @@
  * @date    2019-10-09 10:41:25
  * @version $Id$
  */
-
-var a:string = "AI 深度学习,我们见面了"
+///<reference path="lib/jquery.d.ts" />
+console.log($)
+var a:string = "AI"
 console.log(a)
 let element=document.createElement('div')
 element.innerHTML=a
 document.body.appendChild(element)
 
-class Greeter {
-    greeting: string;
-    constructor(message: string) {
-        this.greeting = message;
-    }
-    greet() {
-        return "Hello, " + this.greeting;
-    }
-}
+// class Greeter {
+//     greeting: string;
+//     constructor(message: string) {
+//         this.greeting = message;
+//     }
+//     greet() {
+//         return "Hello, " + this.greeting;
+//     }
+// }
 
-let greeter = new Greeter("world");
+// let greeter = new Greeter("world");
+// console.log("=============================================")
+// function getMin<T>(arr:T[]):T{
+//    var min=arr[0];
+//    arr.forEach((value)=>{
+//       if(value<min){
+//           min=value;
+//       }
+//    });
+//     return min;
+// }
+ 
+// console.log(getMin([1, 3, 5, 7, 8]));
+// console.log(getMin(["tom","jerry","jack","sunny"]));

@@ -4,18 +4,32 @@
  * @date    2019-10-09 10:41:25
  * @version $Id$
  */
-var a = "Hello typescript,终于见面了";
+///<reference path="./jquery.d.ts" />
+console.log($);
+var a = "AI";
 console.log(a);
 var element = document.createElement('div');
 element.innerHTML = a;
 document.body.appendChild(element);
-var Greeter = /** @class */ (function () {
-    function Greeter(message) {
-        this.greeting = message;
-    }
-    Greeter.prototype.greet = function () {
-        return "Hello, " + this.greeting;
-    };
-    return Greeter;
-}());
-var greeter = new Greeter("world");
+// class Greeter {
+//     greeting: string;
+//     constructor(message: string) {
+//         this.greeting = message;
+//     }
+//     greet() {
+//         return "Hello, " + this.greeting;
+//     }
+// }
+// let greeter = new Greeter("world");
+// console.log("=============================================")
+// function getMin<T>(arr:T[]):T{
+//    var min=arr[0];
+//    arr.forEach((value)=>{
+//       if(value<min){
+//           min=value;
+//       }
+//    });
+//     return min;
+// }
+// console.log(getMin([1, 3, 5, 7, 8]));
+// console.log(getMin(["tom","jerry","jack","sunny"]));
